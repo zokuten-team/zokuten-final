@@ -659,19 +659,13 @@ header.orange .burger span{background:#fff}
 .cta{ margin-top: 18px !important; }
 
 @media (max-width: 768px) {
-  .hero-inner {
-    float: none !important;
-    position: relative !important;
-    left: auto !important;
-    right: auto !important;
-  }
-
-  .hero-inner img {
-    display: block;                /* allows margin auto to work */
-    margin: 0 auto 16px auto;      /* center + space below */
-    max-width: 220px;              /* adjust to taste: 180–240px */
-    width: 70%;                    /* responsive scaling */
-    height: auto;                  /* keep aspect ratio */
+  .hero-inner img{
+    width: 220px !important;
+    max-width: 70vw !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto 16px !important;   /* overrides negative margins */
+    transform: none !important;
     object-fit: contain;
   }
 }
