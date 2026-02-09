@@ -657,11 +657,13 @@ header.orange .burger span{background:#fff}
 .tagline{ margin: 0 !important; }
 .sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
+
 @media (max-width: 768px) {
   .hero-inner {
-    text-align: center;            /* centers text + inline elements */
-    align-items: center;           /* if hero-inner is flex */
-    justify-content: center;
+    float: none !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
   }
 
   .hero-inner img {
