@@ -622,9 +622,10 @@ header.orange .burger span{background:#fff}
   max-width: 90%;
   height: auto;
   display: block;
-  margin: 0 auto 18px;
-
-  transform: scale(50);   /* zoom in = removes borders */
+  margin: -100px auto -300px !important;      /* pulls tagline closer */
+  transform: none !important;
+  
+  transform: scale(1.35);   /* zoom in = removes borders */
 }
 
 /* Tighten text blocks */
