@@ -633,42 +633,38 @@ header.orange .burger span{background:#fff}
 .sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
 
-/* MOBILE HERO FIX: keep desktop same, normalize mobile spacing */
+/* ===== MOBILE HERO FIX (FINAL) ===== */
 @media (max-width: 768px){
-  /* keep fixed header behavior consistent */
-  header{
-    position: fixed;
-  }
 
-  /* give hero proper top space below fixed header */
+  /* keep header fixed like desktop */
+  header{ position: fixed !important; }
+
+  /* hero spacing under header */
   .hero{
-    padding-top: 110px !important;   /* 86px header + breathing room */
-    align-items: center !important;
+    padding-top: 120px !important;
+    min-height: 100vh !important;
+    display: block !important;
   }
 
   .hero-inner{
     padding: 0 !important;
-    text-align: center;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     gap: 14px !important;
   }
 
-  /* logo centered and not huge */
+  /* hero logo */
   .hero-inner img{
     width: 220px !important;
     max-width: 75vw !important;
     height: auto !important;
-    margin: 0 auto 10px !important;
+    margin: 0 auto 12px !important;
   }
 
-  /* text spacing so it doesn't stick to top */
-  .tagline{
-    margin-top: 10px !important;
-  }
-  .sub{
-    margin-top: 10px !important;
-  }
-  .cta{
-    margin-top: 18px !important;
-  }
+  /* hero text spacing */
+  .tagline{ margin: 10px 0 0 !important; }
+  .sub{ margin: 10px auto 0 !important; }
+  .cta{ margin-top: 18px !important; }
 }
