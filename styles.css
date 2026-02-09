@@ -547,31 +547,6 @@ html, body{
     box-sizing: border-box !important;
   }
 }
-/* MOBILE ONLY: center the logo, keep everything else same */
-@media (max-width: 768px){
-
-  header{
-    position: relative;
-  }
-
-  .navwrap{
-    position: relative;
-  }
-
-  .brand{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    gap: 0;
-  }
-
-  /* remove the desktop offsets on mobile */
-  .brand img{
-    margin-left: 0;
-    margin-top: 27;
-    height: 220px;   /* adjust if you want bigger/smaller */
-  }
-}
 .h1{
   font-family: 'Anton', sans-serif;
   font-style: italic;
@@ -658,14 +633,42 @@ header.orange .burger span{background:#fff}
 .sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
 
-@media (max-width: 768px) {
+/* MOBILE HERO FIX: keep desktop same, normalize mobile spacing */
+@media (max-width: 768px){
+  /* keep fixed header behavior consistent */
+  header{
+    position: fixed;
+  }
+
+  /* give hero proper top space below fixed header */
+  .hero{
+    padding-top: 110px !important;   /* 86px header + breathing room */
+    align-items: center !important;
+  }
+
+  .hero-inner{
+    padding: 0 !important;
+    text-align: center;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  /* logo centered and not huge */
   .hero-inner img{
     width: 220px !important;
-    max-width: 70vw !important;
+    max-width: 75vw !important;
     height: auto !important;
-    display: block !important;
-    margin: 0 auto 16px !important;   /* overrides negative margins */
-    transform: none !important;
-    object-fit: contain;
+    margin: 0 auto 10px !important;
+  }
+
+  /* text spacing so it doesn't stick to top */
+  .tagline{
+    margin-top: 10px !important;
+  }
+  .sub{
+    margin-top: 10px !important;
+  }
+  .cta{
+    margin-top: 18px !important;
   }
 }
