@@ -617,12 +617,10 @@ header.orange .burger span{background:#fff}
 }
 
 .hero-inner img{
-  width: 380px !important;     /* desktop stays big */
-  max-width: 90% !important;
-  height: auto !important;
-  display: block !important;
-  margin: 0 auto 18px !important;   /* removes the pull-up effect */
-  transform: none !important;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
 }
 
 /* Tighten text blocks */
@@ -632,8 +630,8 @@ header.orange .burger span{background:#fff}
 @media (max-width: 768px){
 
   .brand img{
-  height: 60px !important;
-  margin-left: 0 !important;
+  height: 90px !important;
+  margin-left: 12px !important;
   margin-top: 0 !important;
 }
 
@@ -658,13 +656,13 @@ header.orange .burger span{background:#fff}
 
   /* hero logo */
   .hero-inner img{
-  width: 320px !important;
-  max-width: 85vw !important;
-  height: 140px !important;     /* forces crop height */
-  object-fit: cover !important; /* crops nicely */
-  object-position: center !important;
-  margin: 0 auto 12px !important;
-}
+    width: 360px !important;       /* bigger logo */
+    max-width: 92vw !important;
+    height: 105px !important;      /* more crop */
+    object-fit: cover !important;
+    object-position: center !important;
+    margin: 0 auto 16px !important;
+  }
 
   /* hero text spacing */
   .tagline{ margin: 10px 0 0 !important; }
