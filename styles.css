@@ -629,8 +629,6 @@ header.orange .burger span{background:#fff}
 }
 
 /* Tighten text blocks */
-.tagline{ margin: 0 !important; }
-.sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
 
 /* ===== MOBILE HERO FIX (FINAL) ===== */
@@ -641,7 +639,7 @@ header.orange .burger span{background:#fff}
 
   /* hero spacing under header */
   .hero{
-    padding-top: 120px !important;
+    padding-top: 140px !important;
     min-height: 100vh !important;
     display: block !important;
   }
