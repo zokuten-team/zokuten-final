@@ -191,7 +191,7 @@ header.scrolled .nav a{color:var(--orange)}
   color:#fff;
 }
 .quote:before{
-  content:"â€œ";
+  content:"";
   position:absolute; top:18px; left:28px;
   font-size:64px; color:var(--orange);
   font-family: Impact, "Arial Black", sans-serif;
@@ -584,7 +584,7 @@ html, body{
 .h1{
   line-height: 1.11;
 }
-section-title{
+.section-title{
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
