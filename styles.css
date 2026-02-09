@@ -345,7 +345,7 @@ header.scrolled .nav a{color:var(--orange)}
   padding:16px 52px;
   font-size:22px;
   font-weight:900;
-  cursor:pointer; \
+  cursor:pointer; 
   box-shadow: var(--shadow);
 }
 .pill-dark:hover{filter:brightness(1.05)}
@@ -559,7 +559,7 @@ html, body{
 .h1{
   line-height: 1.11;
 }
-section-title{
+.section-title{
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -599,10 +599,7 @@ header.orange{
 
 header.orange .nav a{color:#fff}
 header.orange .burger span{background:#fff}
-.hero {
-  padding-top: 40px;      /* reduce big top padding */
-  padding-bottom: 60px;   /* optional */
-}
+
 
 .hero{
   min-height: 100vh;
@@ -634,6 +631,12 @@ header.orange .burger span{background:#fff}
 /* ===== MOBILE HERO FIX (FINAL) ===== */
 @media (max-width: 768px){
 
+  .brand img{
+  height: 60px !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
+
   /* keep header fixed like desktop */
   header{ position: fixed !important; }
 
@@ -657,7 +660,7 @@ header.orange .burger span{background:#fff}
   .hero-inner img{
   width: 320px !important;
   max-width: 85vw !important;
-  height: 120px !important;     /* forces crop height */
+  height: 140px !important;     /* forces crop height */
   object-fit: cover !important; /* crops nicely */
   object-position: center !important;
   margin: 0 auto 12px !important;
