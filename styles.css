@@ -624,7 +624,7 @@ header.orange .burger span{background:#fff}
   display: block;
   margin: 0 auto 18px;
 
-  transform: scale(5);   /* zoom in = removes borders */
+  transform: scale(50);   /* zoom in = removes borders */
 }
 
 /* Tighten text blocks */
