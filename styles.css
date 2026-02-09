@@ -46,7 +46,7 @@ header.orange .burger span{background:#fff}
   height: 255px;
   width: auto;
   display:block;
-  margin-left: -47px;
+  margin-left: -87px;
   margin-top: 27px
 }
 .nav{
@@ -191,7 +191,7 @@ header.scrolled .nav a{color:var(--orange)}
   color:#fff;
 }
 .quote:before{
-  content:"“";
+  content:"â€œ";
   position:absolute; top:18px; left:28px;
   font-size:64px; color:var(--orange);
   font-family: Impact, "Arial Black", sans-serif;
@@ -345,7 +345,7 @@ header.scrolled .nav a{color:var(--orange)}
   padding:16px 52px;
   font-size:22px;
   font-weight:900;
-  cursor:pointer; 
+  cursor:pointer;
   box-shadow: var(--shadow);
 }
 .pill-dark:hover{filter:brightness(1.05)}
@@ -547,6 +547,31 @@ html, body{
     box-sizing: border-box !important;
   }
 }
+/* MOBILE ONLY: center the logo, keep everything else same */
+@media (max-width: 768px){
+
+  header{
+    position: relative;
+  }
+
+  .navwrap{
+    position: relative;
+  }
+
+  .brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 0;
+  }
+
+  /* remove the desktop offsets on mobile */
+  .brand img{
+    margin-left: 0;
+    margin-top: 27;
+    height: 220px;   /* adjust if you want bigger/smaller */
+  }
+}
 .h1{
   font-family: 'Anton', sans-serif;
   font-style: italic;
@@ -559,7 +584,7 @@ html, body{
 .h1{
   line-height: 1.11;
 }
-.section-title{
+section-title{
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -584,7 +609,7 @@ html, body{
   object-fit: cover;
 
   opacity: 0.21;          /* transparency */
-  pointer-events: none;  /* user can’t interact */
+  pointer-events: none;  /* user canâ€™t interact */
 }
 
 /* content above video */
@@ -599,7 +624,10 @@ header.orange{
 
 header.orange .nav a{color:#fff}
 header.orange .burger span{background:#fff}
-
+.hero {
+  padding-top: 40px;      /* reduce big top padding */
+  padding-bottom: 60px;   /* optional */
+}
 
 .hero{
   min-height: 100vh;
@@ -614,21 +642,20 @@ header.orange .burger span{background:#fff}
   flex-direction: column !important;
   align-items: center !important;
   gap: 10px !important;
-  overflow: hidden;
 }
 
+/* Fix: logo too tall + gap look */
 .hero-inner img{
-  width: 380px;          /* keep your perfect desktop size */
-  max-width: 90%;
-  height: auto;
+  width: min(700px, 380vw) !important;   /* stays inside frame */
+  height: auto !important;
   display: block;
   margin: -100px auto -300px !important;      /* pulls tagline closer */
   transform: none !important;
-  
-  transform: scale(1.35);   /* zoom in = removes borders */
 }
 
 /* Tighten text blocks */
+.tagline{ margin: 0 !important; }
+.sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
 
 /* ===== MOBILE HERO FIX (FINAL) ===== */
