@@ -122,12 +122,13 @@ header.scrolled .nav a{color:var(--orange)}
 .h1 .accent{color:var(--orange)}
 .tagline{
   margin:22px 0 18px;
-  font-family: Impact, "Arial Black", Haettenschweiler, sans-serif;
+  font-family: "Anton", sans-serif;   /* ✅ this will work on mobile */
   letter-spacing:1.2px;
   text-transform:uppercase;
   color:#fff;
   font-size: clamp(20px, 2.2vw, 34px);
 }
+
 .sub{
   margin:0 auto;
   max-width:860px;
@@ -700,4 +701,9 @@ header.orange .burger span{background:#fff}
   .tagline{ margin: 10px 0 0 !important; }
   .sub{ margin: 10px auto 0 !important; }
   .cta{ margin-top: 18px !important; }
+}
+@media (max-width: 600px){
+  .sub{
+    display: none;
+  }
 }
