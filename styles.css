@@ -657,3 +657,19 @@ header.orange .burger span{background:#fff}
 .tagline{ margin: 0 !important; }
 .sub{ margin: 6px 0 0 !important; }
 .cta{ margin-top: 18px !important; }
+@media (max-width: 768px) {
+  .hero-inner {
+    text-align: center;            /* centers text + inline elements */
+    align-items: center;           /* if hero-inner is flex */
+    justify-content: center;
+  }
+
+  .hero-inner img {
+    display: block;                /* allows margin auto to work */
+    margin: 0 auto 16px auto;      /* center + space below */
+    max-width: 220px;              /* adjust to taste: 180–240px */
+    width: 70%;                    /* responsive scaling */
+    height: auto;                  /* keep aspect ratio */
+    object-fit: contain;
+  }
+}
