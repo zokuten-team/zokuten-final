@@ -345,7 +345,7 @@ header.scrolled .nav a{color:var(--orange)}
   padding:16px 52px;
   font-size:22px;
   font-weight:900;
-  cursor:pointer;
+  cursor:pointer; \
   box-shadow: var(--shadow);
 }
 .pill-dark:hover{filter:brightness(1.05)}
@@ -619,12 +619,12 @@ header.orange .burger span{background:#fff}
   gap: 10px !important;
 }
 
-/* Fix: logo too tall + gap look */
 .hero-inner img{
-  width: min(700px, 380vw) !important;   /* stays inside frame */
+  width: 380px !important;     /* desktop stays big */
+  max-width: 90% !important;
   height: auto !important;
-  display: block;
-  margin: -100px auto -300px !important;      /* pulls tagline closer */
+  display: block !important;
+  margin: 0 auto 18px !important;   /* removes the pull-up effect */
   transform: none !important;
 }
 
