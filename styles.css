@@ -1744,3 +1744,33 @@ header.orange .burger span{background:#fff}
     text-shadow: 0 0 18px rgba(245,82,32,.28);
   }
 }
+/* ==========================================================
+   HERO TEXT (Mobile): polished typography + casing
+   Paste at END of CSS
+   ========================================================== */
+
+@media (max-width: 768px){
+
+  /* If your hero headline uses .h1 and the 2nd/3rd lines are spans or <br>,
+     this will make it look premium and consistent. */
+  .hero .h1{
+    text-transform: none !important;      /* stop forced ALL CAPS */
+    letter-spacing: 0.4px !important;
+    line-height: 1.02 !important;
+    color: rgba(255,255,255,.995) !important;
+  }
+
+  /* Optional: if you used spans inside the headline like:
+     <h1 class="h1">Everything you need to<br><span>GROW, BUILD & SCALE</span><br>your business.</h1>
+     this will restyle the middle line to Title Case feel */
+  .hero .h1 span{
+    text-transform: none !important;
+    letter-spacing: 0.6px !important;
+  }
+
+  /* If your 3rd line is a separate element (common pattern), polish it */
+  .hero .tagline{
+    text-transform: none !important;
+    letter-spacing: 0.2px !important;
+  }
+}
